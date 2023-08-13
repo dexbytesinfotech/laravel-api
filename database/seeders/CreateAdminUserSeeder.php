@@ -21,9 +21,9 @@ class CreateAdminUserSeeder extends Seeder
     {
 
         $user = User::create([
-            'first_name' => 'Moadcars',
-            'last_name' => 'admin',
-            'email' => 'admin@moadcars.com',
+            'first_name' => 'Admin',
+            'last_name' => 'user',
+            'email' => 'admin@admin.com',
             'password' => 'admin123',
             'remember_token' => Str::random(60)
         ]);
