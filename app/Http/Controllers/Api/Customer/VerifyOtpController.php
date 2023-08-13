@@ -120,7 +120,7 @@ class VerifyOtpController extends BaseController
 
                     PushDevice::updateOrCreate(
                         ['device_uid' => $request->deviceId,
-                        'app_name' => 'customer'],
+                        'app_name' => Roles::CUSOTMER],
                         [
                         'user_id'=> auth()->user()->id,
                         'device_uid' => $request->deviceId,
