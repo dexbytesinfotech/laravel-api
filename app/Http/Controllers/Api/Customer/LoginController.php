@@ -103,7 +103,7 @@ class LoginController extends BaseController
             }else{
                 $verificationCode = Util::generateOTP();
 
-                $message = __("sms/customer.Dear :name,your sign in otp is :otp",['name' => $user->name,"otp" => $verificationCode]);
+                $message = __("sms/customer.Dear :name,your sign in otp is :otp",['name' => $user->first_name,"otp" => $verificationCode]);
                 Util::sendMessage($mobileNumber, $message);
             }
             User::where('id', '=', $user->id)->update(['verification_code' => $verificationCode]);

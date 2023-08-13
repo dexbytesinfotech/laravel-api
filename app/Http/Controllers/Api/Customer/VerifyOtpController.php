@@ -191,7 +191,7 @@ class VerifyOtpController extends BaseController
             User::where('id', '=', auth()->user()->id)->update(['verification_code' => $verificationCode]);
 
             //SMS API
-            $message = __("sms/customer.Dear :name,your resent otp is :otp",['name' => auth()->user()->name,"otp" => $verificationCode]);
+            $message = __("sms/customer.Dear :name,your resent otp is :otp",['name' => auth()->user()->first_name,"otp" => $verificationCode]);
             Util::sendMessage(auth()->user()->phone, $message);
 
          return $this->sendResponse(['phone' => auth()->user()->phone], trans('customer.OTP sent successfully'));
