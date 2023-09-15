@@ -20,6 +20,8 @@
 12. From the projects root folder run (local) `php artisan schedule:work` for server use scheduling * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 
 
+# Admin Panel 
+1. Project https://github.com/dexbytesinfotech/livewire should be after installed API code in your server or machine
 
 ### Storage folder Ownership and Permission
 1. Check the permissions on the storage directory: `chmod -R 775 storage`    
