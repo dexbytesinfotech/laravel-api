@@ -15,7 +15,7 @@
 7.  From the projects root folder run `php artisan migrate:fresh --seed`
 8.  From the projects root folder run `composer dump-autoload`
 9.  From the projects root folder run `php artisan storage:link`
-10. From the projects root folder run `php artisan l5-swagger:generate`
+10. From the projects root folder run `php artisan l5-swagger:generate` (https://github.com/DarkaOnLine/L5-Swagger)
 11. From the projects root folder run (local) `php artisan schedule:work` for server use supervisor
 12. From the projects root folder run (local) `php artisan schedule:work` for server use scheduling * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 
@@ -43,6 +43,10 @@
 -   [Google Maps API v3 Key](https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key)
 
 -   [Firebase Server Key] (https://firebase.google.com/)
+
+-   [Twilio SMS API Key](https://www.twilio.com/blog/create-sms-portal-laravel-php-twilio)
+
+-   [Unifonic SMS API Key](https://docs.unifonic.com/docs/getting-sms-application-1)
 
 ## Remove public from url
 <IfModule mod_rewrite.c>
