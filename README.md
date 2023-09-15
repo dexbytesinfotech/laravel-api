@@ -2,8 +2,8 @@
 
 ## Lib
 - Laravel 9.x
-- Twillo 
-- Firebase
+- Twillo (SMS)
+- Firebase (Push Notifications)
 
 # Installation
 1.  Run git clone https://github.com/dexbytesinfotech/laravel-api.git laravel-api
