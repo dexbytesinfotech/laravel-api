@@ -59,30 +59,5 @@
 ```
 ## Cron Jobs
 1. Send scheduled push notification `Push\NotificationController@sendScheduledPushNotification`
-
-## S3 public Dummy images 
-```bash
-{
-	"Version": "2008-10-17",
-	"Statement": [
-		{
-			"Sid": "AllowPublicRead",
-			"Effect": "Allow",
-			"Principal": {
-				"AWS": "*"
-			},
-			"Action": "s3:GetObject",
-			"Resource": "arn:aws:s3:::{{folder path}}*"
-		}
-	]
-}
-```
-
-## supervisorctl Jobs
-```bash
-sudo supervisorctl stop all
-sudo supervisorctl reread
-sudo supervisorctl update
-sudo supervisorctl start all
-ps aux | grep artisan
-```
+ 
+ 
