@@ -50,7 +50,7 @@
 
 -   [Unifonic SMS API Key](https://docs.unifonic.com/docs/getting-sms-application-1)
 
-# Remove public from url
+## Remove public from url
 ```bash
 <IfModule mod_rewrite.c>
 	RewriteEngine On
@@ -61,6 +61,7 @@
 1. Send scheduled push notification `Push\NotificationController@sendScheduledPushNotification`
 
 ## S3 public Dummy images 
+```bash
 {
 	"Version": "2008-10-17",
 	"Statement": [
@@ -75,11 +76,13 @@
 		}
 	]
 }
-
+```
 
 ## supervisorctl Jobs
+```bash
 sudo supervisorctl stop all
 sudo supervisorctl reread
 sudo supervisorctl update
 sudo supervisorctl start all
 ps aux | grep artisan
+```
