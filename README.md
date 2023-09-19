@@ -50,12 +50,13 @@
 
 -   [Unifonic SMS API Key](https://docs.unifonic.com/docs/getting-sms-application-1)
 
-## Remove public from url
+# Remove public from url
+```bash
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
-
+```
 ## Cron Jobs
 1. Send scheduled push notification `Push\NotificationController@sendScheduledPushNotification`
 
