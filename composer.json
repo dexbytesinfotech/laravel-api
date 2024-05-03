@@ -12,6 +12,7 @@
         "astrotomic/laravel-translatable": "^11.11",
         "darkaonline/l5-swagger": "^8.3",
         "doctrine/dbal": "^3.3",
+        "enlightn/enlightn": "^2.10",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "jzonta/faker-restaurant": "^2.0",
