@@ -18,7 +18,7 @@ return [
                 \Illuminate\Routing\Middleware\SubstituteBindings::class,
                 \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
                 'auth',
-                'title' => 'Modern api integration',
+                'title' => env('APP_NAME').' Api integration',
             ],
 
             'routes' => [

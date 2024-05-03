@@ -84,7 +84,7 @@ class ConfigSeeder extends Seeder
             ['code' => 'enable_sms_notifications', 'label'  => 'SMS Notification Enable', 'value'  => config('general.enable_sms_notifications')],
             ['code' => 'price_with_tax', 'label'  => 'Price With Tax', 'value'  => true],
             ['code' => 'deep_link_url', 'label'  => 'Deep link url', 'value'  =>  parse_url(config('app.url'), PHP_URL_HOST)],
-            ['code' => 'website_title', 'label'  => 'Display app name', 'value'  =>  'logo'], // logo/name/name_and_logo
+            ['code' => 'website_title', 'label'  => 'Display app name', 'value'  =>  'name'], // logo/name/name_and_logo
             ];
 
     }
